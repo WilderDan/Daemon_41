@@ -1,0 +1,46 @@
+GitHub Tutorial
+Dan Wilder
+
+===============================================================================
+Introduction
+===============================================================================
+This is a basic tutorial to using Git with GitHub. This is NOT intended to be a
+comprehensive guide. My goal is to provide a quick example of how we can
+actually make use of GitHub right away with minimal experience. 
+
+Why GitHub? Well... basic GitHub use satisfies:
+    0) Central location for our project
+    1) Version Control
+    2) Backup of work
+    3) Easy!
+
+===============================================================================
+Dive into GitHub - Hands on Training Certification Course
+===============================================================================
+I should probably add something here.
+  
+===============================================================================
+Words, Words, and more words
+===============================================================================
+Git: Version control system. Exists independently of GitHub.
+
+GitHub: Website to publish Git repositories and collaborate with other people.
+
+Repository: Collection of all files associated with project. Think root
+    directory of project.
+
+===============================================================================
+Wanna learn more? Check out these exciting links! Woaaaah
+===============================================================================
+GitHub: 
+    https://github.com/
+
+    This one should be self-explantory.
+
+Udacity Tutorial: 
+    https://www.udacity.com/course/how-to-use-git-and-github--ud775
+
+    I really liked this one.
+
+Google:
+    Google for the address... I smell RECURSION!!!
