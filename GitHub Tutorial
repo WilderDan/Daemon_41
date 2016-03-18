@@ -1,5 +1,16 @@
 GitHub Tutorial
-Dan Wilder
+Daemon 41 
+
+===============================================================================
+Group Members
+===============================================================================
+Add your name below for some practice.
+-
+-
+-
+-
+-
+- Dan Wilder
 
 ===============================================================================
 Introduction
@@ -15,12 +26,34 @@ Why GitHub? Well... basic GitHub use satisfies:
     3) Easy!
 
 ===============================================================================
-Dive into GitHub - Hands on Training Certification Course
+Dive into GitHub
 ===============================================================================
-I should probably add something here.
+Git is a version control system. GitHub is simply an extension in the form of
+a website that makes git easy for collaboration.  
+
+0) Go to https://github.com/ 
+
+1) Sign up for an account if you don't have one
+
+Git and GitHub use what are known as repositories. A repository is simply
+a collection of all files associated with project. Perhaps a simpler way
+to think of it is as the root directory of a project. 
+
+I created a repository for our project which we can use to store our files.
+If you are reading this, then you already have the link to our project 
+repository.
+
+***IMPORTANT*** Email/text me your GitHub username so that I can add you
+to the list of collaborators. You can already read the files, but I need
+to add you to the list so that you can add/edit files in the repository
+autonomously. 
+
+2) Wait for me to add you to the list
+
+3) 
   
 ===============================================================================
-Words, Words, and more words
+Words, words, and more words
 ===============================================================================
 Git: Version control system. Exists independently of GitHub.
 
@@ -28,6 +61,9 @@ GitHub: Website to publish Git repositories and collaborate with other people.
 
 Repository: Collection of all files associated with project. Think root
     directory of project.
+
+Collaborator: Person who can add/remove/edit repository. We will all be 
+    collaborators. 
 
 ===============================================================================
 Wanna learn more? Check out these exciting links! Woaaaah
