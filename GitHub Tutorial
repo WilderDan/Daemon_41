@@ -31,9 +31,8 @@ Dive into GitHub
 Git is a version control system. GitHub is simply an extension in the form of
 a website that makes git easy for collaboration.  
 
-0) Go to https://github.com/ 
-
-1) Sign up for an account if you don't have one
+0) Go to https://github.com/ and sign up for an account if you don't 
+already have one.
 
 Git and GitHub use what are known as repositories. A repository is simply
 a collection of all files associated with project. Perhaps a simpler way
@@ -43,15 +42,48 @@ I created a repository for our project which we can use to store our files.
 If you are reading this, then you already have the link to our project 
 repository.
 
-***IMPORTANT*** Email/text me your GitHub username so that I can add you
+1) ***IMPORTANT*** Email/text me your GitHub username so that I can add you
 to the list of collaborators. You can already read the files, but I need
 to add you to the list so that you can add/edit files in the repository
 autonomously. 
 
-2) Wait for me to add you to the list
+Each time a file is added/edited in the repository, it must be done through
+what is called a commit. A commit means updating the repository with your
+revisions. A good commit reflects a single logical change. A single commit
+can consist of multiple files. Example: Adding a new class may use a header 
+file and a code file. In general, it is better to do frequent small commits
+rather than few large commits. Wouldn't you rather have more versions to 
+fall back on than few? Of course, too small of commits can also make finding
+the right older version difficult. I wouldn't worry too much about this
+for now though. 
 
-3) 
-  
+Finally when making a commit, you should add a short message describing the 
+changes.
+
+From repository: https://github.com/sentientWilder/Daemon_41
+    Click on 'commits' to see a history of our repository's previous versions. 
+    
+You will notice at least two of these commit messages: 'Initial commit' and 
+'Add some tutorial'. 
+
+2) Wait for me to add you to the collaborator list if not added yet.
+
+3) I am asssuming you are reading this from project repository on GitHub. If not,
+then navigate to 'GitHub Tutorial' file in the repository. Click on the
+pencil icon to edit file. Under the Group Member section at the top, add your
+name. 
+
+4) Scroll down towards the bottom where it says commit changes. Fill in a 
+commit message in the first box. A good message might be "Add <your_name>". 
+
+Editing the file directly from GitHub works well for simple text files like 
+this, but it isn't the best solution for code files. I will elaborate on that
+soon, but it isn't much more difficult than what you just did.
+
+*) Optional - Add your own advice, change format, fix typos, etc
+
+More to come!
+
 ===============================================================================
 Words, words, and more words
 ===============================================================================
@@ -64,14 +96,18 @@ Repository: Collection of all files associated with project. Think root
 
 Collaborator: Person who can add/remove/edit repository. We will all be 
     collaborators. 
+    
+Commit: Update repository with the new revisions (new file, edits)
 
 ===============================================================================
 Wanna learn more? Check out these exciting links! Woaaaah
 ===============================================================================
 GitHub: 
     https://github.com/
-
     This one should be self-explantory.
+    
+    https://github.com/sentientWilder/Daemon_41
+    This is our (temp?) project repository.
 
 Udacity Tutorial: 
     https://www.udacity.com/course/how-to-use-git-and-github--ud775
