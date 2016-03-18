@@ -28,11 +28,11 @@ Why GitHub? Well... basic GitHub use satisfies:
 ===============================================================================
 Dive into GitHub
 ===============================================================================
+----------------------------------------
+Theory
+----------------------------------------
 Git is a version control system. GitHub is simply an extension in the form of
 a website that makes git easy for collaboration.  
-
-0) Go to https://github.com/ and sign up for an account if you don't 
-already have one.
 
 Git and GitHub use what are known as repositories. A repository is simply
 a collection of all files associated with project. Perhaps a simpler way
@@ -41,11 +41,6 @@ to think of it is as the root directory of a project.
 I created a repository for our project which we can use to store our files.
 If you are reading this, then you already have the link to our project 
 repository.
-
-1) ***IMPORTANT*** Email/text me your GitHub username so that I can add you
-to the list of collaborators. You can already read the files, but I need
-to add you to the list so that you can add/edit files in the repository
-autonomously. 
 
 Each time a file is added/edited in the repository, it must be done through
 what is called a commit. A commit means updating the repository with your
@@ -60,11 +55,22 @@ for now though.
 Finally when making a commit, you should add a short message describing the 
 changes.
 
-From repository: https://github.com/sentientWilder/Daemon_41
-    Click on 'commits' to see a history of our repository's previous versions. 
+An example of these messages (commit history):
+    From project repository: https://github.com/sentientWilder/Daemon_41
     
-You will notice at least two of these commit messages: 'Initial commit' and 
-'Add some tutorial'. 
+    Click on 'commits'. You will see at least two of these commit messages:
+    'Initial commit' and 'Add some tutorial'. 
+
+----------------------------------------
+Practice
+----------------------------------------
+0) Go to https://github.com/ and sign up for an account if you don't 
+already have one.
+
+1) ***IMPORTANT*** Email/text me your GitHub username so that I can add you
+to the list of collaborators. You can already read the files, but I need
+to add you to the list so that you can add/edit files in the repository
+autonomously. 
 
 2) Wait for me to add you to the collaborator list if not added yet.
 
@@ -76,11 +82,11 @@ name.
 4) Scroll down towards the bottom where it says commit changes. Fill in a 
 commit message in the first box. A good message might be "Add <your_name>". 
 
+*) Optional - Add your own advice, change format, fix typos, etc
+
 Editing the file directly from GitHub works well for simple text files like 
 this, but it isn't the best solution for code files. I will elaborate on that
 soon, but it isn't much more difficult than what you just did.
-
-*) Optional - Add your own advice, change format, fix typos, etc
 
 More to come!
 
