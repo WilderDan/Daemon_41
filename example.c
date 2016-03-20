@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    printf("Daemon 41\n");
+    printf("MERGE CONFLICT\n");
 
     return 0;
 }
