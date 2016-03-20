@@ -1,5 +1,9 @@
 GitHub Tutorial
 Daemon 41 
+Repository: https://github.com/sentientWilder/Daemon_41
+
+
+
 
 ===============================================================================
 Group Members
@@ -11,6 +15,9 @@ Add your name below for some practice.
 -
 -
 - Dan Wilder
+
+
+
 
 ===============================================================================
 Introduction
@@ -25,14 +32,20 @@ Why GitHub? Well... basic GitHub use satisfies:
     2) Backup of work
     3) Easy!
 
+
+
+
 ===============================================================================
 Dive into GitHub
 ===============================================================================
+
+
 ----------------------------------------
 Theory
 ----------------------------------------
-Git is a version control system. GitHub is simply an extension in the form of
-a website that makes git easy for collaboration.  
+
+Git is a version control system. GitHub is an extension in the form of a
+website that makes git easy for collaboration.  
 
 Git and GitHub use what are known as repositories. A repository is simply
 a collection of all files associated with project. Perhaps a simpler way
@@ -40,30 +53,35 @@ to think of it is as the root directory of a project.
 
 I created a repository for our project which we can use to store our files.
 If you are reading this, then you already have the link to our project 
-repository.
+repository. Here it is again:
+    https://github.com/sentientWilder/Daemon_41
 
-Each time a file is added/edited in the repository, it must be done through
-what is called a commit. A commit means updating the repository with your
-revisions. A good commit reflects a single logical change. A single commit
-can consist of multiple files. Example: Adding a new class may use a header 
-file and a code file. In general, it is better to do frequent small commits
-rather than few large commits. Wouldn't you rather have more versions to 
-fall back on than few? Of course, too small of commits can also make finding
-the right older version difficult. I wouldn't worry too much about this
-for now though. 
+You can add/edit files as usual using your favorite text editor or IDE.
+However, each time you want to save your changes to the repository, 
+it must be done through what is called a commit. A commit means updating 
+the repository with your revisions. A good commit reflects a single logical 
+change. A single commit can consist of multiple files.
+    zB: Adding a new class may use a header file and a code file.
 
 Finally when making a commit, you should add a short message describing the 
 changes.
 
-An example of these messages (commit history):
-    From project repository: https://github.com/sentientWilder/Daemon_41
-    
-    Click on 'commits'. You will see at least two of these commit messages:
-    'Initial commit' and 'Add some tutorial'. 
+To see the commit history of our respository:
+    https://github.com/sentientWilder/Daemon_41/commits/master
+
+This provides a history of the project's evolution. The commit messages help
+others reading the log to (better) understand the purpose of each revision.
+
+
+
 
 ----------------------------------------
 Practice
 ----------------------------------------
+
+[Method 1]    EDIT DIRECTLY FROM GITHUB
+
+
 0) Go to https://github.com/ and sign up for an account if you don't 
 already have one.
 
@@ -82,13 +100,77 @@ name.
 4) Scroll down towards the bottom where it says commit changes. Fill in a 
 commit message in the first box. A good message might be "Add <your_name>". 
 
-*) Optional - Add your own advice, change format, fix typos, etc
+*) Optional - change format, fix typos, add whatever, etc
 
-Editing the file directly from GitHub works well for simple text files like 
-this, but it isn't the best solution for code files. I will elaborate on that
-soon, but it isn't much more difficult than what you just did.
 
-More to come!
+Editing files this way (directly from GitHub) works well for simple tasks like
+editing a README or adding some comments in code. 
+
+
+
+
+[Method 2]    DOWNLOAD ZIP FILE, EDIT LOCALLY, UPLOAD BACK TO GITHUB
+
+
+0) From project repository: https://github.com/sentientWilder/Daemon_41
+click "DONWLOAD ZIP". Extract files. You now have your own LOCAL copy of
+the entire project.
+
+1) Edit example.c (1 line code even) using any method you like.
+
+2) Test your code
+
+3) Return to GitHub (in our repository), click upload file
+
+4) Select file(s) and add commit message
+
+
+Pros:
+    - Simple; Familiar download/upload workflow (like Google Drive)
+    - Test changes BEFORE committing 
+
+Cons:
+    - Have to deal with below situation manually i.e manual merging.
+
+Consider following situation:
+- Bob and Alice download GitHub repository at same time.
+- Bob edits file example.c and uploads example.c to GitHub
+- Alice's file doesn't have Bob's revisions (latest version)
+- Alice makes her own changes and uploads example.c to GitHub
+: Latest commit only has Alice's changes
+
+This same situation applies if we used Google Drive or something 
+similar. With GitHub though, we get the same download/upload workflow,
+but if we overwrite changes we still have the older version saved in the log. 
+
+
+
+
+
+
+[Method 3]    USE GIT TO MAINTAIN A LOCAL REPOSITORY 
+
+
+This is the most effective way to use git and GitHub. However, there is
+a learning curve to it. Method 2 can suffice for our purposes, but this
+approach is very useful so I at least wanted to mention it.
+
+The basic idea is each person has their own local repository and GitHub serves 
+as a single remote repository. 
+
+Two important operations: push, pull
+    - push: Add your local commits TO the remote repository
+    - pull: Update your local repository FROM the remote repository
+
+Pros:
+   - Better at dealing with merge conflicts
+   - More streamlined - won't have to keep downloading project zip
+
+Cons:
+   - Takes some time to learn
+
+
+
 
 ===============================================================================
 Words, words, and more words
@@ -105,20 +187,17 @@ Collaborator: Person who can add/remove/edit repository. We will all be
     
 Commit: Update repository with the new revisions (new file, edits)
 
+
+
+
 ===============================================================================
-Wanna learn more? Check out these exciting links! Woaaaah
+Wanna learn more?
 ===============================================================================
 GitHub: 
     https://github.com/
-    This one should be self-explantory.
-    
-    https://github.com/sentientWilder/Daemon_41
-    This is our (temp?) project repository.
 
 Udacity Tutorial: 
     https://www.udacity.com/course/how-to-use-git-and-github--ud775
 
-    I really liked this one.
-
 Google:
-    Google for the address... I smell RECURSION!!!
+    
