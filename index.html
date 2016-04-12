@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Daemon 41 
+     
+     Demo
+-->
+
+<html>
+
+<head>
+    <meta name="author" content="Daemon 41">
+    <meta charset="utf-8">
+
+    <title>Demo Page</title>
+
+    <!-- Here be styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Access to jQuery library. *** THIS LINE MUST APPEAR BEFORE LINKING TO JS FILE *** -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Here be JavaScript -->
+    <script type="text/javascript" src="behavior.js"></script>
+    
+    <!-- The below line is not needed now, but it can be helpful later if
+         we want to set up a responsive style - different layout for 
+         mobile, large screen, etc.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="content_container">
+
+        <div id="title_banner" class="content_pane">
+            <h1>VW Diesel Emissions Measurement Simulation</h1>
+        </div>
+
+        <div id="query_categories" class="content_pane">
+            <input id="blah" type="radio" name="test_type" value="road" checked>Road Test<br>
+            <input id="blah2" type="radio" name="test_type" value="lab">Lab Test<br>
+
+            <button id="submit_btn"><strong>RUN</strong></button>
+        </div>
+
+        <div id="chosen_options" class="content_pane">
+
+            <!-- Display message based on radio button after clicking "RUN"-->
+            <p id="selected_option"></p>
+        </div>
+
+        <div id="result_display" class="content_pane">
+            <!-- Populated by jQuery -->
+            <div id="image_container"></div>
+        </div>
+    </div>
+</body>
+
+</html>
