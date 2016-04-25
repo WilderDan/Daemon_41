@@ -25,15 +25,15 @@ function notAcheat(driveType, carType, distance, speed, elevation, temp){
    }
    // set average starting values
    if(carType == 0){ // jetta
-     distanceAve = 32.09; //In miles based on three Los Angeles testing routes
-     speedAve = 31.94; //In miles per hour based on three Los angeles testing routes
-     elevationAve = 1288.88; //Feet above sea level
-     tempAve = 30;
+         distanceAve = 32.09; //In miles based on three Los Angeles testing routes
+         speedAve = 31.94; //In miles per hour based on three Los angeles testing routes
+         elevationAve = 1288.88; //Feet above sea level
+         tempAve = 30;
    else{             // pasat
-     distanceAve = 32.09 ;
-     speedAve = 31.94;
-     elevationAve = 1288.88;
-     tempAve = 30;
+         distanceAve = 32.09 ;
+         speedAve = 31.94;
+         elevationAve = 1288.88;
+         tempAve = 30;
    }
    if(distance >= (distanceAve - distanceDev) && distance <= (distanceAve + distanceDev)){
 	 checkMarks++;  
