@@ -26,6 +26,21 @@ $(document).ready(function () {
 
         document.getElementById("result_display").style.border = "2px solid silver";
     });
+	
+	$("#Custom_Btn").click(function () {
+		$(".btn_img").removeClass("current_Option");  
+		$("#custom_img").addClass("current_Option");	
+	});
+	
+	$("#Lab_Btn").click(function () {
+		$(".btn_img").removeClass("current_Option"); 
+		$("#lab_img").addClass("current_Option");
+	});
+	
+	$("#Road_Btn").click(function () {
+		$(".btn_img").removeClass("current_Option");  
+		$("#road_img").addClass("current_Option");
+	});
 });
 
 //Jetta

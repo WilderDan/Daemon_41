@@ -62,19 +62,29 @@ h1, p, input {
     text-align: center;
 }
 
+.current_Option{
+	border: 2px solid green;
+
+}
+
 #t_mode {
     margin-top: 3px;
     padding-left: 5px;
     padding-right: 5px;
     display: inline-block;
     height: 100px;
-    width: 125px;
+    width: 125px;3:03 PM 4/25/2016
     text-align: left;
 }
 
 #road_lab_pic {
     height: 75px;
     width: 125px;
+}
+
+.btn_img{
+	height: 100%;
+	width: 96%;
 }
 
 #results_wrap {
