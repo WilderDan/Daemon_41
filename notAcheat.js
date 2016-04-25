@@ -1,7 +1,8 @@
 // take input values and find how many of them are with the cheat window.
 // return the number of values which are with in the cheat window.
- var checkMarks = 0;
+var checkMarks;
 function notAcheat(driveType, distance, speed, elevation, temp){
+   chechMarks = 0;	
    // set average starting values
    var distanceAve = 32.09; //In miles based on three Los Angeles testing routes
    var speedAve = 31.94; //In miles per hour based on three Los angeles testing routes
