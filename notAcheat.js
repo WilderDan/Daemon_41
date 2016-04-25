@@ -1,16 +1,13 @@
 // take input values and find how many of them are with the cheat window.
 // return the number of values which are with in the cheat window.
-
-function notAcheat(driveType, carType, distance, speed, elevation, temp){
-   
-   var checkMarks = 0;
-   var distanceAve;
-   var speedAve;
-   var elevationAve;
-   var tempAve;
-   var distanceDev;
-   var speedDev;
-   var elevationDev;
+ var checkMarks = 0;
+function notAcheat(driveType, distance, speed, elevation, temp){
+   // set average starting values
+   var distanceAve = 32.09; //In miles based on three Los Angeles testing routes
+   var speedAve = 31.94; //In miles per hour based on three Los angeles testing routes
+   var elevationAve = 1288.88; //Feet above sea level
+   var tempAve = 30;
+   var distanceDev, speedDev, elevationDev;
    // set deviation window
    if(driveType == 0){// straight
 	 distanceDev = 20;
@@ -18,23 +15,17 @@ function notAcheat(driveType, carType, distance, speed, elevation, temp){
 	 elevationDev = 200;
 	 checkMarks++;
    }
-   else{              // curvey
-	 distanceDev = 10;
-	 speedDev = 15;
-	 elevationDev = 100;
+   else if(driveType == 1){ // curvey
+   	distanceDev = 10;
+	speedDev = 15;
+	elevationDev = 100;
    }
-   // set average starting values
-   if(carType == 0){ // jetta
-         distanceAve = 32.09; //In miles based on three Los Angeles testing routes
-         speedAve = 31.94; //In miles per hour based on three Los angeles testing routes
-         elevationAve = 1288.88; //Feet above sea level
-         tempAve = 30;
-   else{             // pasat
-         distanceAve = 32.09 ;
-         speedAve = 31.94;
-         elevationAve = 1288.88;
-         tempAve = 30;
+   else // more curvey
+	 distanceDev = 5;
+	 speedDev = 10;
+	 elevationDev = 50;
    }
+  
    if(distance >= (distanceAve - distanceDev) && distance <= (distanceAve + distanceDev)){
 	 checkMarks++;  
    }
