@@ -11,20 +11,17 @@ function notAcheat(driveType, carType, distance, speed, elevation, temp){
    var distanceDev;
    var speedDev;
    var elevationDev;
-   var tempDev;
    // set deviation window
    if(driveType == 0){// straight
-	 distanceDev = ;
-	 speedDev = ;
-	 elevationDev = ;
-	 tempDev = ;
+	 distanceDev = 10;
+	 speedDev = 15 ;
+	 elevationDev = 100;
 	 checkMarks++;
    }
    else{              // curvey
-	 distanceDev = ;
-	 speedDev = ;
-	 elevationDev = ;
-	 tempDev = ;
+	 distanceDev = 20;
+	 speedDev = 20;
+	 elevationDev = 200;
    }
    // set average starting values
    if(carType == 0){ // jetta
