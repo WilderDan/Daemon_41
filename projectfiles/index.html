@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<!-- Daemon 41
+
+     Demo
+-->
+
+<html>
+
+<head>
+    <meta name="author" content="Daemon 41">
+    <meta charset="utf-8">
+
+    <title>Demo Page</title>
+
+    <!-- Here be styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Access to jQuery library. *** THIS LINE MUST APPEAR BEFORE LINKING TO JS FILE *** -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Here be JavaScript -->
+    <script type="text/javascript" src="behavior.js"></script>
+
+    <!-- The below line is not needed now, but it can be helpful later if
+         we want to set up a responsive style - different layout for
+         mobile, large screen, etc.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="rnoselect()">
+    <div class="content_container">
+
+        <!-- Page headings section -->
+        <div id="title_banner" class="content_pane">
+            <h1>VW Diesel Emissions Measurement Simulation</h1>
+        </div>
+        <div id="options_head">
+            <p><b>Test Options:</b></p>
+        </div>
+
+        <!-- Test options section -->
+        
+            <div id="chosen_options" class="content_pane">
+                <div id="t_mode_wrap">
+                    <div id="t_mode">
+                        Test Type:<br />
+                        <img id="road_lab_pic" src="images/croad.jpg" /> <br />
+                        <input id="blah3" type="radio" name="test_type" value="road" onchange="drads()" \>Custom Road Test
+                    </div>
+                    <br />
+                    <div id="t_mode">
+                        <img id="road_lab_pic" src="images/road.jpg" /> <br />
+                        <input id="blah" type="radio" name="test_type" value="road" onchange="drads()" checked \>Road Test
+                    </div>
+                    <br />
+                    <div id="t_mode">
+                        <img id="road_lab_pic" src="images/vw_lab.jpg" /> <br />
+                        <input id="blah2" type="radio" name="test_type" value="lab" onchange="drads()" \>Lab Test
+                    </div>
+                    <br />
+                    <div style="width:100%; border-top: 2px solid grey;"></div>
+                    <div id="t_mode" style="height: 150px;">
+                        Car Type <br />
+                        <div id="car_select_img"><img id="road_lab_pic" src="images/jetta.jpg" /> <br /></div>
+                        <input id="car1" type="radio" name="car_model" value="jetta" checked \>Jetta <br />
+                        <input id="car2" type="radio" name="car_model" value="passat" \>Passat
+                    </div>
+                    <br />
+                </div>
+
+                <!-- Display message based on radio button after clicking "RUN"-->
+                <p id="selected_option" style="height: 15px;"></p>
+                <button id="submit_btn"><strong>RUN</strong></button>
+            </div>
+      
+         <div id="ct_mode_wrap">
+                    <div id="ct_mode">
+                        Distance <br />
+                        <img id="road_lab_pic" src="images/measuring_stick.jpg" /> <br />
+                        <input id="dist1" type="radio" name="distance" value="0">Short <br />
+                        <input id="dist2" type="radio" name="distance" value="1">Medium <br />
+                        <input id="dist3" type="radio" name="distance" value="2">Long
+                    </div>
+                    <div id="ct_mode">
+                        Terrain <br />
+                        <img id="road_lab_pic" src="images/curvy_road.jpg" /> <br />
+                        <input id="terr1" type="radio" name="terrain" value="0">Straight <br />
+                        <input id="terr2" type="radio" name="terrain" value="1">Mixed <br />
+                        <input id="terr3" type="radio" name="terrain" value="2">Curvy
+                    </div>
+                    <div id="ct_mode">
+                        Driving Style <br />
+                        <img id="road_lab_pic" src="images/tach.jpg" /> <br />
+                        <input id="drv1" type="radio" name="drive" value="0">Casual <br />
+                        <input id="drv2" type="radio" name="drive" value="1">Normal <br />
+                        <input id="drv3" type="radio" name="drive" value="2">Agressive
+                    </div>
+                    <div id="ct_mode">
+                        Cold Start <br />
+                        <img id="road_lab_pic" src="images/cold.jpg" /> <br />
+                        <input id="cs1" type="radio" name="coldstart" value="0">Yes <br />
+                        <input id="cs2" type="radio" name="coldstart" value="1">No
+                    </div>
+                </div>
+                <div id="results_wrap">
+                    <div id="result_display" class="content_pane" style="height: 15px;">
+                        <!-- Populated by jQuery -->
+                        <div id="image_container"></div>
+                        <p id="test_data"></p>
+                    </div>
+                </div>
+    </div>
+</body>
+
+</html>
