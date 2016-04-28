@@ -19,7 +19,7 @@ html, body {
     display: inline-block;
     width: 100%;
     height: 100%;
-    padding: 1px 1px 1px 1px;
+    padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
 }
 
@@ -35,7 +35,7 @@ h1, p, input {
     height: 15%;
     min-height: 15%;
     width: 100%;
-    padding: 1px 1px 1px 1px;
+    padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
 }
 
@@ -45,36 +45,59 @@ h1, p, input {
 }
 
 #query_categories {
+    float: left;
     height: 20%;
     width: 100%;
     min-height: 100px;
-    text-align: center;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 #t_mode_wrap {
     border: 2px solid silver;
     border-left: none;
     border-right: none;
-    overflow: hidden;
     display: inline-block;
-    height: 110px;
+    height: 520px;
     width: 100%;
     text-align: center;
 }
 
-.current_Option{
-	border: 2px solid green;
-
+#ct_mode_wrap{
+    border: 2px solid silver;
+    border-left: none;
+    border-right: 2px solid silver;
+    display: inline-block;
+    height: 170px;
+    width: 75%;
+    float: left;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 #t_mode {
     margin-top: 3px;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom:5px;
     display: inline-block;
     height: 100px;
-    width: 125px;3:03 PM 4/25/2016
+    width: 140px;
     text-align: left;
+}
+
+#ct_mode {
+    margin-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    height: 170px;
+    width: 145px;
+    text-align: left;
+    overflow:hidden;
 }
 
 #road_lab_pic {
@@ -82,43 +105,56 @@ h1, p, input {
     width: 125px;
 }
 
-.btn_img{
-	height: 100%;
-	width: 96%;
-}
-
 #results_wrap {
     display: inline-block;
-    width: 90%;
+    width: 75%;
+    height:448px;
     text-align: center;
-    padding-right: 5%;
-    padding-left: 5%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    border-bottom: 2px solid silver;
+    border-right: 2px solid silver;
 }
 
 #chosen_options {
-    height: 450px;
-    min-height: 65%;
+    height: 620px;
+    min-height: 620px;
     width: 18%;
     text-align: center;
     display: block;
     float: left;
     border: 2px solid silver;
+    overflow: hidden;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    margin-left: 11px;
 }
 
 #result_display {
     height: 450px;
-    width: 78%;
-    display: block;
+    min-height: 450px;
+    width: 100%;
+    display: inline-block;
     float: right;
     border: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 #image_container {
-    height: 300px;
+    height: 150px;
+    width: 300px;
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    overflow: hidden;
 }
 
 #test_data{
     text-align: left;
+    width: 30%;
     padding-left: 10px;
     padding-bottom: 10px;
 }
