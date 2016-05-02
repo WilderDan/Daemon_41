@@ -11,7 +11,7 @@ $(document).ready(function () {
         if (value == "road") {
             var option_string = "Road Test selected";
             var image_string = "<img src='images/road.jpg' alt='fake graph' style='width:80%; height: 80%;'>";
-            var data = "Road Test Results: <br />NMOG: " + nmog + "grams/mile <br />" + "CO:    " + co + "grams/mile <br />" + "Nox:   " + nox + "grams/mile <br />" + "HCHO: " + hcho + "grams/mile <br />";
+            var data = "Road Test Results: <br />NMOG: " + nmog + "grams/mile <br />" + "CO:    " + co + "grams/mile <br />" + "NOx:   " + nox + "grams/mile <br />" + "HCHO: " + hcho + "grams/mile <br />";
         }
         else {
             var option_string = "Lab Test selected";
