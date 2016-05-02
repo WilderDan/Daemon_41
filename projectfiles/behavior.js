@@ -14,7 +14,7 @@ $(document).ready(function () {
         coldstart = ($("input[name=coldstart]:checked").val());
         genResults(value);
 
-        var data = "<table style='width: 100%'><tr><th>Chemical\t</th><th>grams/mile</th></tr><tr><td>NMOG</td><td>" + nmog.toFixed(4) + "</td></tr><tr><td>CO</td><td>" + co.toFixed(4) + "</td></tr><tr><td>Nox</td><td>" + nox.toFixed(4) + "</td></tr><tr><td>HCHO</td><td>" + hcho.toFixed(4) + "</td></tr></table>"; 
+        var data = "<table style='width: 100%'><tr><th>Chemical\t</th><th>grams/mile</th></tr><tr><td>NMOG</td><td>" + nmog.toFixed(4) + "</td></tr><tr><td>CO</td><td>" + co.toFixed(4) + "</td></tr><tr><td>NOx</td><td>" + nox.toFixed(4) + "</td></tr><tr><td>HCHO</td><td>" + hcho.toFixed(4) + "</td></tr></table>"; 
 
         if (value == "road") {
             var option_string = "<strong>Road Test selected</strong>";
