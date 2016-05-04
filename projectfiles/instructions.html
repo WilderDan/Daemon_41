@@ -1,11 +1,255 @@
 <!DOCTYPE html>
+<!-- Daemon 41 
+     
+     Demo
+-->
+
 <html>
-	 <!-- Here be styles -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-	
-    <div id="title_banner" class="content_pane">
-        <h1>Instruction Page</h1>
-    </div>
-	<center>Alan's HTML page goes here!!!</center>
-	
+
+<head>
+    <title>VW Diesel Emission Simulation User Guide</title>
+		<link rel="stylesheet" type="text/css" href="ReadMeStyle.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+        <div id="title_banner" class="title_pane">
+            <h1>VW Diesel Emissions <br/>Measurement Simulation<br/></h1><hr><h2> User's Guide</h2><hr/>
+			<div id="requirement_wrapper" class="text_wrapper">
+				<div id="sections" class="sections_pane" style="text-align:left;width:50%">
+					<h3><p style="text-align:center"><u><h2>Table of Contents</h2></u></p></h3>
+					<ol>
+						<a href="#requirements"><li>Web page requirements</li></a>
+						<a href="#Main_Screen_View"><li>Screen Image</li></a>
+						<a href="#Descriptions"><li>Component Descriptions</li></a>
+						<a href="#instructions"><li>Instructions</li></a>
+					</ol>
+				</div>
+			</div>
+			<div id="Main_Pane" class="Content_Pane">
+				
+				<div id="requirement_wrapper" class="text_wrapper" >
+					<p style="text-align: justify">
+					&nbsp;&nbsp;&nbsp;&nbsp;The VW Diesel Emissions Measurement Simulator Shows test results for the Jetta and 
+					Passat. The output given by te simulation are a based on several variables within a tolerance level. 
+					The website demonstrates the levels given in a controlled lab test, as well as a real road driving 
+					conditions. The site itself draws no conclusions and intends for the user to run simulations to analyze
+					the results.
+					</p>
+				</div>
+				<div id="requirement_wrapper" class="text_wrapper" >
+					<div id="requirements">
+					<h2><u>Requirements:</u></h2>
+						<ul type="square">
+							<li>Java</li>
+							<li>Javascript enabled</li>
+							<li>Chrome<br/>(<b>Note:</b>Other web browsers may work but have not been tested at this time.)</li>
+						</ul>
+						<br/>
+					</div>
+				</div>
+				<p style="text-align:center">Screen Image</p>
+				<img id="Main_Screen_View" class ="Main_image" src="images/VWFullPageImage.jpg" />
+			</div>
+        </div>
+		<div id="guide_wrapper" class="text_wrapper">
+			<div id="Descriptions" style="width:100%;text-align:left" >
+				<h2><p style="text-align:center">Label Descriptions</p></h2>
+					<ol>
+						<li>Test Type - Selected these options to select the type of test to run</li>
+						<ul type="square">
+							<li><b>Custom Test</b> - runs a simulated road emissions test with user selected traits.</li>
+							<li><b>Road Test</b> - runs a preset test simulating road conditions</li>
+							<li><b>Lab Test</b> - runs a standard lab condition emissions test</li>
+						</ul><br />
+						<li>Vehicle - Select a vehicle to test</li>
+						<ul type="square">
+							<li><b>Jetta</b></li>
+							<li><b>Passat</b></li>
+						</ul><br />
+						<li>Custom Road Test Options - User selected constraint (Only available on custom road test)</li>
+						<ul type="square">
+							<li><b>Distance</b></li>
+								<ol type="a">
+									<li><b>Short</b> - Short drive below 10 miles</li>
+									<li><b>Medium</b>  - moderate drive between 10-25 miles</li>
+									<li><b>Long</b> - Long drive over 25 miles</li>
+								</ol>
+							<li><b>Terrain</b></li>
+								<ol type="a">
+									<li><b>Straight</b> - simulates output for a flat generally straight roads. </li>
+									<li><b>Mixed</b> - simulates output for a randomly simulated curvy or straight roads. </li>
+									<li><b>Curvy</b> - simulates output for a roadways with many sharp or large turns, and very few straightaways.</li>
+								</ol>
+							<li><b>Driving Style</b></li>
+								<ol type="a">
+									<li><b>Casual</b> - Set test to run for casual driving situations (i.e. slow accelaration, low rpms, moderate speed,etc.).</li>
+									<li><b>Normal</b> - Set test to run for standard driving. No abnormal peaks or lulls in driving condition.</li>
+									<li><b>Aggressive</b> - Set test to run accounting for aggressive behavior (i.e. Over Rev Engine, high speed,etc.). </li>
+								</ol>
+							<li><b>Cold Start</b></li>
+								<ol type="a">
+									<li><b>Yes</b> - Runs a custom road test assuming the engine has not been prestarted.</li>
+									<li><b>No - Runs the test with the enginie already warmed up.</li>
+								</ol>
+						</ul><br/>
+						<li>Run Test button</li><br />
+						<li>Results Display (Visible once a test has been run)</li>
+						<ul type="square">
+							<li><b>NMOG (Non-Methane Organic Gases)</b> - Measured in grams per mile</li>
+							<li><b>CO (Carbon Monoxide)</b> - Measured in grams per mile</li>
+							<li><b>NO<sub>X</sub> (Nitrogen Oxide)</b> - Measured in grams per mile</li>
+							<li><b>HCHO(Formaldehyde)</b> - Measured in grams per mile</li>
+							<li><b>MPG ( Miles per Gallon)- Gas usage per mile base on test parameters.</b></li>
+							<li><b>Distance</b> - Measured in miles</li>
+							<li><b>Average Speed</b> - Measured in miles per hour</li>
+						</ul><br/>
+					</ol>
+				
+			</div>
+		
+		<div id="instructions" class="instr_wrapper">
+			<h2><u>Instructions to Run a Test</u></h2>
+			<div id="table_wrap"  class="table_wrapper">
+				<div id="table_row" class="table_row_wrapper">
+					<div id="testOptImg" class="table_cell_img_wrapper" style="text-align:right">
+						<img id="Test_Type_Image" src="images/TestTypeImage.jpg" >
+					</div>
+					<div id="test_opt_instr" class="table_cell_wrapper">
+								1. First choose a method of test to run: Custom Road Test, Road Test, and Lab Test.</p>
+									<br/><p style="margin-left:20px">Road test and Lab test will use preset constraints for the test. 
+									<br/>Custom Road Test will allow the user to change certain constraints to allow for driving conditions.</p>
+							</div>
+						</div>
+						<div id="table_row" class="table_row_wrapper">
+						<br/>
+						</div>
+						<div id="table_row" class="table_row_wrapper">
+							<div id="testOptImg" class="table_cell_img_wrapper">
+								<img id="Test_Type_Image" src="images/VehicleOptionsImage.jpg" style="width:100%;height:100%"/>
+							</div>
+							<div id="test_opt_instr" class="table_cell_wrapper">
+								2. Choose the type of vehicle to be used in the test. At this time only the VW Jetta and Passat are available.	
+							</div>
+							
+						</div>
+						<div id="table_row" class="table_row_wrapper">
+						<br/>
+						</div>
+						
+						<div id="table_row" class="table_row_wrapper" style="height:100px">
+							<div id="testOptImg" class="table_cell_img_wrapper" style="text-align:right">
+								<img id="Test_Type_Image" src="images/TestEnvironmentImage.jpg" style="width:100%;height:100%"/>
+							</div>
+							<div id="test_opt_instr" class="table_cell_wrapper">
+								<p>
+								3. (Custom Road Test ONLY)Adjust the Custom Test parameters<br/>
+							</div>
+						</div>
+						<div id="table_row" class="table_row_wrapper">
+						<br/>
+						</div>
+						
+						<div id="table_row" class="table_row_wrapper">
+							<div id="testOptImg" class="table_cell_img_wrapper" style="text-align:right">
+								<img id="Test_Type_Image" src="images/DistanceTestEnvironmentImage.jpg" style="width:100%;height:75%"/>
+							</div>
+							<div id="test_opt_instr" class="table_cell_wrapper">
+								<p>
+								3a. Adjust the Distance (Custom Road Test ONLY)<br/>
+									Distance determines the approximate size of the sample for the test.<br/>
+									Also after a certain distance/time the simulation will enter warmed up engine state.
+									
+									
+							</div>
+						</div>
+						<div id="table_row" class="table_row_wrapper">
+						<br/>
+						</div>
+						
+						<div id="table_row" class="table_row_wrapper">
+							<div id="testOptImg" class="table_cell_img_wrapper" style="text-align:right">
+								<img id="Test_Type_Image" src="images/TerrainTestEnvironmentImage.jpg" style="width:100%;height:75%"/>
+							</div>
+							<div id="test_opt_instr" class="table_cell_wrapper">
+								<p>
+								3b. Adjust the Road Type (Custom Road Test ONLY)<br/>
+									Road type affects the driving condition and consistency of the engine.
+									Curvy roads require more acceleration and deceleration.
+									
+									
+							</div>
+						</div>
+						<div id="table_row" class="table_row_wrapper">
+						<br/>
+						</div>
+						
+						<div id="table_row" class="table_row_wrapper">
+							<div id="testOptImg" class="table_cell_img_wrapper" style="text-align:right">
+								<img id="Test_Type_Image" src="images/DrivingStyleTestEnvironmentImage.jpg" style="width:100%;height:75%"/>
+							</div>
+							<div id="test_opt_instr" class="table_cell_wrapper">
+								<p>
+								3c. Adjust the Driving Style (Custom Road Test ONLY)<br/>
+									Driving style affects the way the engine runs during the test.
+									The casual state puts minimal effort on the engine while aggressive may accelerate fast and Over-Rev the engine.
+							</div>
+						</div>
+						<div id="table_row" class="table_row_wrapper">
+						<br/>
+						</div>
+						
+						<div id="table_row" class="table_row_wrapper">
+							<div id="testOptImg" class="table_cell_img_wrapper" style="text-align:right">
+								<img id="Test_Type_Image" src="images/ColdStartTestEnvironmentImage.jpg" style="width:100%;height:75%"/>
+							</div>
+							<div id="test_opt_instr" class="table_cell_wrapper">
+								<p>
+								3d. Adjust the Cold Start Test parameter (Custom Road Test ONLY)<br/>
+									Cold start affects whether the engine is treated as warmed up.
+									Warmed up engines are able to operate slightly more efficiently than a cold engine.
+									Cold start increase the quantity of gas emisssions until warm up.
+									
+							</div>
+						</div>
+						<div id="table_row" class="table_row_wrapper">
+						<br/>
+						</div>
+						
+						<div id="table_row" class="table_row_wrapper">
+							<div id="testOptImg" class="table_cell_img_wrapper" style="text-align:Center">
+								<img id="Test_Type_Image" src="images/RunButtonImage.jpg" />
+							</div>
+							<div id="test_opt_instr" class="table_cell_wrapper">
+								4. Click the run button to run your test.
+							</div>
+						</div>
+						<div id="table_row" class="table_row_wrapper">
+						<br/>
+						</div>
+						
+						<div id="table_row" class="table_row_wrapper">
+							<div id="testOptImg" class="table_cell_img_wrapper">
+								
+							</div>
+							<div id="test_opt_instr" class="table_cell_wrapper">
+								5. Review Results in Display.
+								Results displayed:
+									Each emission (NMOG,NO<sub>X</sub>,CO, and HCHO) in quantities of Grams per mile, miles per gallon average of the test, total distance of the simulation, and average speed of the simulation.
+							</div>
+						</div>
+						<div id="table_row" class="table_row_wrapper">
+							<div id="testOptImg" class="table_cell_img_wrapper">
+								
+							</div>
+							<div id="test_opt_instr" class="table_cell_wrapper">
+								<img id="Test_Type_Image" src="images/TestResultsImage.jpg" style="height:100%;width:100%" />	</div>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		
+	</body>
 </html>
