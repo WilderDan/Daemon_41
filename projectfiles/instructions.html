@@ -100,7 +100,7 @@
 							<li><b>CO (Carbon Monoxide)</b> - Measured in grams per mile</li>
 							<li><b>NO<sub>X</sub> (Nitrogen Oxide)</b> - Measured in grams per mile</li>
 							<li><b>HCHO (Formaldehyde)</b> - Measured in grams per mile</li>
-							<li><b>MPG (Miles Per Gallon)- Gas usage per mile based on test parameters.</b></li>
+							<li><b>MPG (Miles Per Gallon)</b>- Gas usage per mile based on test parameters.</li>
 							<li><b>Distance</b> - Measured in miles</li>
 							<li><b>Average Speed</b> - Measured in miles per hour</li>
 						</ul><br/>
@@ -117,7 +117,7 @@
 					</div>
 					<div id="test_opt_instr" class="table_cell_wrapper">
 								1. First, choose a method of test to run: Custom Road Test, Road Test, or Lab Test.</p>
-									<br/><p style="margin-left:20px">Road test and Lab test will use preset constraints for the test. 
+									<br/><p class="indent">Road test and Lab test will use preset constraints for the test. 
 									<br/>Custom Road Test will allow the user to change certain constraints to allow for driving conditions.</p>
 							</div>
 						</div>
@@ -142,8 +142,9 @@
 								<img id="Test_Type_Image" src="images/TestEnvironmentImage.jpg" style="width:100%;height:100%"/>
 							</div>
 							<div id="test_opt_instr" class="table_cell_wrapper">
-								<p>
-								3. (Custom Road Test ONLY) Adjust the Custom Test parameters<br/>
+								
+								3. Adjust the "Custom Road Test" parameters <br/>
+								<p class="indent"> Steps 3a through 3d.</p>
 							</div>
 						</div>
 						<div id="table_row" class="table_row_wrapper">
@@ -155,11 +156,11 @@
 								<img id="Test_Type_Image" src="images/DistanceTestEnvironmentImage.jpg" style="width:100%;height:75%"/>
 							</div>
 							<div id="test_opt_instr" class="table_cell_wrapper">
-								<p>
+								<p class="indent">
 								3a. Adjust the Distance (Custom Road Test ONLY)<br/>
 									Distance determines the approximate size of the sample for the test.<br/>
-									Also, after a certain distance/time, the simulation will enter warmed-up engine state.
-									
+									During a "Cold Start", after a certain distance/time, the simulation will enter warmed-up engine state.
+									</p>
 									
 							</div>
 						</div>
@@ -172,12 +173,12 @@
 								<img id="Test_Type_Image" src="images/TerrainTestEnvironmentImage.jpg" style="width:100%;height:75%"/>
 							</div>
 							<div id="test_opt_instr" class="table_cell_wrapper">
-								<p>
+								<p class="indent">
 								3b. Adjust the Road Type (Custom Road Test ONLY)<br/>
 									Road type affects the driving condition and consistency of the engine.
 									Curvy roads require more acceleration and deceleration.
 									
-									
+								</p>									
 							</div>
 						</div>
 						<div id="table_row" class="table_row_wrapper">
@@ -189,10 +190,11 @@
 								<img id="Test_Type_Image" src="images/DrivingStyleTestEnvironmentImage.jpg" style="width:100%;height:75%"/>
 							</div>
 							<div id="test_opt_instr" class="table_cell_wrapper">
-								<p>
+								<p class="indent">
 								3c. Adjust the Driving Style (Custom Road Test ONLY)<br/>
 									Driving style affects the way the engine runs during the test.
-									The casual state puts minimal effort on the engine while the aggressive state may accelerate fast and over-rev the engine.
+									The casual state puts minimal effort on the engine while the aggressive state will drive and accelerate faster.
+									</p>
 							</div>
 						</div>
 						<div id="table_row" class="table_row_wrapper">
@@ -204,12 +206,12 @@
 								<img id="Test_Type_Image" src="images/ColdStartTestEnvironmentImage.jpg" style="width:100%;height:75%"/>
 							</div>
 							<div id="test_opt_instr" class="table_cell_wrapper">
-								<p>
+								<p class="indent">
 								3d. Adjust the Cold Start Test parameter (Custom Road Test ONLY)<br/>
 									A cold start affects whether the engine is treated as warmed up.
 									Warmed-up engines are able to operate slightly more efficiently than a cold engine.
 									A cold start increases the quantity of gas emissions until engine is warmed up.
-									
+									</p>
 							</div>
 						</div>
 						<div id="table_row" class="table_row_wrapper">
@@ -234,8 +236,8 @@
 							</div>
 							<div id="test_opt_instr" class="table_cell_wrapper">
 								5. Review Results in Display.
-								Results displayed:
-									Each emission (NMOG,NO<sub>X</sub>,CO, and HCHO) in quantities of Grams per mile, miles per gallon average of the test, total distance of the simulation, and average speed of the simulation.
+								<p class="indent"> Each emission (NMOG,NO<sub>X</sub>,CO, and HCHO) in quantities of Grams per mile, miles per gallon average
+								of the test, total distance of the simulation, and average speed of the simulation.</p>
 							</div>
 						</div>
 						<div id="table_row" class="table_row_wrapper">
